@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <ul>
+        <li onmouseover="handleMouseover(event)" onmouseleave="handleMouselaeve(event)">
+            hallo
+        </li>
+    </ul>
+    <button onclick="handleClick()">
+        knoptje
+    </button>
+    <script>
+        // script moet op het laatste onderaan in je body komen, want het script moet alle html eerst "gezien hebben"
+        let items = ["dag", "salut", "doeg"]
+        for (index in items) {
+            document.querySelector("ul").innerHTML =
+                document.querySelector("ul").innerHTML
+                + "<li>"
+                + items[index]
+                + "</li>"
+        }
+        function handleClick() {
+            document.querySelector("ul").innerHTML += "<li> hihihihi </li>"
+        }
+        function handleMouseover(event) {
+            event.target.style.color = "red"
+            event.target.innerHTML += "<p>xx</p>"
+        }
+
+        function handleMouselaeve(event) {
+            event.target.style.color = "black"
+        }
+    </script>
+</body>
+
+</html>

@@ -6,8 +6,11 @@
 
     </style>
 </head>
-
-<body>
+<body onclick="handleclick(event)" onmousemove="handleclick2(event)">
+    <!-- handkeclick is de conventie als functienaam om te luisteren naar onclick events (handleclick button 1, handleclick button2,...) -->
+    <!-- een argument zoals event geeft weer dat er een argument kan meegegeven worden aan de functie -->
+    <!-- listener: attribuut van html tag die luistert naar een event in javascript,  An HTML event can be something the browser does, or something a user does.-->
+    <!-- de functie bepaald dan wat de reactie is nadat het event gebeurt-->
     <h4>Opdracht</h4>
 
     <h5><b>Deel 1</b></h5>
@@ -17,7 +20,7 @@
     <h5><b>Deel 2</b></h5>
     <p>
         Je hebt geleerd om met 'document.querySelector()' een element te selecteren. Je hebt ook geleerd dat er een
-        'onmouseenter' event is waar je naar kan luisteren.
+        'onmousemove' (je hebt ook onmouseenter) event is waar je naar kan luisteren.
         &nbsp;&nbsp;
         Schrijf een script die de actuele coördinaten van de muis toont. Je gaat nu luisteren naar het 'mousemove'
         event.
@@ -30,6 +33,18 @@
     </div>
 
     <script>
+        function handleclick(arg1) {
+            let x = event.clientX;  // Horizontal
+            let y = event.clientY;  // Vertical
+            console.log(x, y, arg1)
+        }
+
+        function handleclick2(arg1) {
+            let x = event.clientX;  // Horizontal
+            let y = event.clientY;  // Vertical
+            console.log(x, y, arg1)
+            document.querySelector()
+        }
 
     </script>
 </body>

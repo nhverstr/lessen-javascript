@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(to bottom, #b0e0ff, #6ab7e8);
+  min-height: 100%;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  padding: 2em 1em;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #6ab7e8, #ffb6c1, #b0e0ff);
+  flex: 0;
+}
+
+img {
+  width: 120px;
+  border: 2px solid #6ab7e8;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px #6ab7e8, 0 0 20px #b0e0ff, 0 0 30px #ffb6c1;
+}
+
+#extra-output {
+  position: absolute;
+}

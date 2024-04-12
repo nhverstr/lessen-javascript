@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Les 3: Tooltips</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #B0E0FF, #6AB7E8);
+            min-height: 100%;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            font-family: sans-serif;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            width: 100%;
+            padding: 2em 1em;
+            justify-content: space-around;
+            background: linear-gradient(to bottom, #6AB7E8, #FFB6C1, #B0E0FF);
+            flex: 0;
+        }
+
+        img {
+            width: 120px;
+            border: 2px solid #6AB7E8;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        img:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px #6AB7E8, 0 0 20px #B0E0FF, 0 0 30px #FFB6C1;
+        }
+
+        #extra-output {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img onclick="handleClick(event)" id="aap" alt="aap" src="images/aap.png" />
+        <img onclick="handleClick(event)" id="giraf" alt="giraf" src="images/giraf.png" />
+        <img onclick="handleClick(event)" id="olifant" alt="olifant" src="images/olifant.png" />
+        <img onclick="handleClick(event)" id="aap2" alt="aap2" src="images/aap2.png" />
+        <div id="extra-output"></div>
+    </div>
+
+    <div class="container">
+        <h1>Output</h1>
+        <p id="output">Zie hier de uitleg</p>
+    </div>
+
+    <script>
+        // De fake API, straks komt dit uit de database, maar voorlopig is dit gewoon een object
+        const api = {
+            "aap": "Een aap is een behendige, meestal harige viervoeter met een staart, die in bomen leeft en een omnivoor dieet heeft.",
+            "giraf": "Een giraf is een langnekige, grazende zoogdier met vlekken en lange poten, die in Afrika leeft en bladeren eet van hoge bomen.",
+            "olifant": "Een olifant is een groot, grijs zoogdier met slagtanden en een lange slurf, dat in Afrika en Azië leeft en planten eet.",
+            "aap2": "Een gorilla is een grote, krachtige mensaap met een brede borst, brede schouders en sterke ledematen. Ze hebben een dikke, zwarte of bruine vacht."
+        }
+
+        function handleClick(event) {
+            /**
+             * Deel 1: Zoek uit hoe je de id vindt van het element waar op geklikt is
+             * 
+             * gebruik hiervoor event.target (https://www.w3schools.com/jsref/event_target.asp)
+             */
+
+
+            // typ hier de code voor deel 1
+
+
+            /**
+             * Deel 2: Met die id kan je aan de API vragen voor het juiste bijhorende tekstje.
+             * De API is gewoon een object, in les 1 heb je geleerd hoe je dat gebruikt. (zie les-1/les1.js)
+             * 
+             */
+
+            // code voor deel 2
+
+
+            /**
+             * Deel 3: Print de tekst in #output
+             * 
+             */
+
+            // code voor deel 3
+
+
+            /**
+             * EXTRA
+             * 
+             * Haal de opnieuw de coördinaten uit het ClickEvent (zie les-2/index.html).
+             * Geef de x,y van de muis aan #extra-output.
+             * Lees hier hoe je een div op een bepaalde x,y zet (https://stackoverflow.com/questions/6802956/how-to-position-a-div-at-specific-coordinates/6802969#6802969)
+             */
+        }
+
+    </script>
+</body>
+
+</html>

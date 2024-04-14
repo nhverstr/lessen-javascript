@@ -37,7 +37,7 @@
 
 
             // typ hier de code voor deel 1
-
+            console.log(event.target.id)
 
             /**
              * Deel 2: Met die id kan je aan de API vragen voor het juiste bijhorende tekstje.
@@ -46,6 +46,12 @@
              */
 
             // code voor deel 2
+            for (item in api) {
+                if (event.target.id === item) {
+                    console.log(api[item])
+                }
+            }
+
 
 
             /**

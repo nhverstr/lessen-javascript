@@ -45,20 +45,18 @@
              * 
              */
 
-            // code voor deel 2
-            for (item in api) {
-                if (event.target.id === item) {
-                    console.log(api[item]),
-                    document.getElementById('output').innerHTML = api[item]
-                }
-            }
-
             /**
              * Deel 3: Print de tekst in #output
              * 
              */
 
-            // code voor deel 3
+            // code voor deel 2 + deel 3
+            for (item in api) {
+                if (event.target.id === item) {
+                    console.log(api[item]),
+                        document.getElementById('output').innerHTML = api[item]
+                }
+            }
 
 
             /**
@@ -68,6 +66,16 @@
              * Geef de x,y van de muis aan #extra-output.
              * Lees hier hoe je een div op een bepaalde x,y zet (https://stackoverflow.com/questions/6802956/how-to-position-a-div-at-specific-coordinates/6802969#6802969)
              */
+
+            let x = event.clientX
+            let y = event.clientY
+            let coordinate_div = document.getElementById('extra-output')
+            coordinate_div.innerHTML = "x=" + String(x) + "<br>y=" + String(y)
+            coordinate_div.style.position = "absolute"
+            coordinate_div.style.top = y
+            coordinate_div.style.left = x
+                console.log(x, y)
+
         }
 
     </script>

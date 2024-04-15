@@ -48,11 +48,10 @@
             // code voor deel 2
             for (item in api) {
                 if (event.target.id === item) {
-                    console.log(api[item])
+                    console.log(api[item]),
+                    document.getElementById('output').innerHTML = api[item]
                 }
             }
-
-
 
             /**
              * Deel 3: Print de tekst in #output

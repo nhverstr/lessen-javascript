@@ -8,6 +8,7 @@ body {
   justify-content: center;
 
   font-family: sans-serif;
+  position: relative;
 }
 
 .container {
@@ -32,4 +33,10 @@ img:hover {
 
 #extra-output {
   position: absolute;
+  z-index: 2;
+  background: white;
+  padding: 2em 1em;
+  border-radius: 10% 25%;
+  max-width: 10em;
+  text-align: left;
 }

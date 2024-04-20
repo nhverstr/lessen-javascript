@@ -6,12 +6,13 @@
 </head>
 
 <body>
+    <div id="extra-output"></div>
+
     <div class="container">
         <img onclick="handleClick(event)" id="aap" alt="aap" src="images/aap.png" />
         <img onclick="handleClick(event)" id="giraf" alt="giraf" src="images/giraf.png" />
         <img onclick="handleClick(event)" id="olifant" alt="olifant" src="images/olifant.png" />
         <img onclick="handleClick(event)" id="aap2" alt="aap2" src="images/aap2.png" />
-        <div id="extra-output"></div>
     </div>
 
     <div class="container">
@@ -67,15 +68,27 @@
              * Lees hier hoe je een div op een bepaalde x,y zet (https://stackoverflow.com/questions/6802956/how-to-position-a-div-at-specific-coordinates/6802969#6802969)
              */
 
-            let x = event.clientX
-            let y = event.clientY
-            let coordinate_div = document.getElementById('extra-output')
-            coordinate_div.innerHTML = "x=" + String(x) + "<br>y=" + String(y)
-            coordinate_div.style.position = "absolute"
-            coordinate_div.style.top = y
-            coordinate_div.style.left = x
-                console.log(x, y)
+            for (item in api) {
+                if (event.target.id === item) {
+                    console.log(api[item]),
+                        document.getElementById('output').innerHTML = api[item]
 
+                    let x = event.clientX
+                    let y = event.clientY
+                    let coordinate_div = document.getElementById('extra-output')
+                    // coordinate_div.innerHTML = "x=" + String(x) + "<br>y=" + String(y)
+                    coordinate_div.innerHTML = api[item]
+                    coordinate_div.style.position = "absolute"
+                    coordinate_div.style.top = y
+                    coordinate_div.style.left = x
+                }
+            }
+
+            /** TODO
+             * - extra oefening corrigeren
+             * -> array.map en .find uitleggen
+             * - schoonheidsfoutjes met de tooltip(timeouts ed...)
+             */
         }
 
     </script>

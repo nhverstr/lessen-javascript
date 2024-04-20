@@ -41,10 +41,10 @@ console.log("Tech Words:", techArr);
  */
 
 // code deel 1
-let natureString = natureArr.toString()
-let techString = techArr.toString()
-console.log(natureString)
-console.log(techString)
+let natureString = natureArr.toString();
+let techString = techArr.toString();
+console.log(natureString);
+console.log(techString);
 /**
  * Deel 2: filter() vs reduce()
  * Neem alle woorden van natureArr, en maak een nieuw lijst 'shortNatureArr'
@@ -52,7 +52,18 @@ console.log(techString)
  * Print shortNature, met de methode die je leerde in deel 1
  */
 
+
 // code deel 2
+
+let shortNatureArr = natureArr.filter(checkWordLength);
+
+function checkWordLength(word) {
+  if (word.length < 6) {
+    return word;
+  }
+}
+/*@Nathan: wat ik niet snap is hoe js nu weet wat ik bedoel met word? */
+console.log(shortNatureArr);
 
 /**
  * Deel 3

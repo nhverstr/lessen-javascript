@@ -14,7 +14,7 @@
 
 // JS Array refence
 /**
- * Deze les steunt op een heel belangrijke pagina, die javascript array reference (of arr ref in het kort). Dit is een lijst
+ * Deze les steunt op een heel belangrijke pagina, de javascript array reference (of arr ref in het kort). Dit is een lijst
  * die elke functie de er bestaat, geordend op lijst. Je moet die niet uit je hoofd kennen, maar deze wel
  * extensief gebruiken. (https://www.w3schools.com/jsref/jsref_obj_array.asp) (en dus uit je hoofd kennen)
  * (deze pagina is mijn lievelingspagina)
@@ -32,8 +32,8 @@ const techArr = [
   "device",
 ];
 
-console.log("Nature Words:", natureWords);
-console.log("Tech Words:", techWords);
+console.log("Nature Words:", natureArr);
+console.log("Tech Words:", techArr);
 
 /**
  * Deel 1: vind een functie in de array ref die de array verandert naar een string
@@ -41,7 +41,10 @@ console.log("Tech Words:", techWords);
  */
 
 // code deel 1
-
+let natureString = natureArr.toString()
+let techString = techArr.toString()
+console.log(natureString)
+console.log(techString)
 /**
  * Deel 2: filter() vs reduce()
  * Neem alle woorden van natureArr, en maak een nieuw lijst 'shortNatureArr'
@@ -55,12 +58,12 @@ console.log("Tech Words:", techWords);
  * Deel 3
  * Output het laatste woord met 4 letters in techArr
  * Output techArr zonder dat laatste woord
- * 
+ *
  * Output de reverse van deze array.
- * 
+ *
  * Output het eerste woord met 4 letters in techArr
  * Output techArr zonder dat eerste woord
- * 
+ *
  * Tip: als je deze allemaal na elkaar uitvoert, kom je in de problemen. Gebruik een temporary array
  * om je originele bewaren
  */

@@ -118,9 +118,18 @@ console.log(techArrSpliced2);
 /**
  * Deel 4
  * Wat is het verschil tussen .includes() en .indexOf()?
+ *
  * Test dit, door te zoeken naar het woord 'flower' in natureArr.
  * Output het resultaat van .includes() op 'flower'
  * Output het resultaat van .indexOf() op 'flower'
  */
 
 // code deel 4
+
+let flowerIncluded = natureArr.includes("flower")
+console.log(flowerIncluded)
+
+let flowerIndex = natureArr.indexOf("flower")
+console.log(flowerIndex)
+
+/* Het verschil is dat includes() je enkel een idee geeft over of het element dat in de array zit (returned boolean), terwijl indexOf() ook de positie geeft. Je kan indexOf() ook gebruiken om te zien of het element erin zit, want als het er niet in zit word er een "-1" gereturned */

@@ -13,7 +13,6 @@ Een parameter kan het min of max aantal woorden in de quote zijn.
 Misschien een lijst van voorwerpen, werkwoord, zoiets? Verbuigingen van werkwoorden?
 
 
-
 bv [text](https://inspirobot.me/)
 ## Ideetjes
 - Drag sorting?

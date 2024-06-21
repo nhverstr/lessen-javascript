@@ -3,7 +3,6 @@
 
 <head>
     <title>Les 6</title>
-    <script src="mousemove.js"></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
         let zelfstandigeNaamwoordPuur = ["Nathan", "liefde", "Virginie"]
         let werkWoorden = ["speelt", "eet", "geeft", "likt", "gilt", "krabt", "geeuwt", "klikt", "schuurt", "boert"]
         let voegWoorden = ["met", "aan", "naar", "bij", "in", "rondom", "op", "tussen", "zonder"]
-        let znOpties = [zelfstandigeNaamwoordPuur, zelfstandigeNaamwoordenDe, zelfstandigeNaamwoordenEen, zelfstandigeNaamwoordenHet]
+        let Opties = [zelfstandigeNaamwoordPuur, zelfstandigeNaamwoordenDe, zelfstandigeNaamwoordenEen, zelfstandigeNaamwoordenHet]
 
         // Engine
         // zin = lidwoord + zn naamwoord + ww + voegwoord + lidwoord + zn naamwoord
@@ -28,50 +27,22 @@
         let woord4 = zelfstandigeNaamwoordPuur[random(zelfstandigeNaamwoordPuur.length)]
 
 
-        let eersteZn = ""
-        let tweedeZn = ""
-
-        function genereerZn(hoeveelsteZn) {
-
-            let randomLidwoordKeuze = random(znOpties.length)
-            if (randomLidwoordKeuze === 0) {
-                hoeveelsteZn = woord1
-            }
-            else if (randomLidwoordKeuze === 1) {
-                hoeveelsteZn = woord2
-            }
-            else if (randomLidwoordKeuze === 2) {
-                hoeveelsteZn = woord3
-            }
-            else if (randomLidwoordKeuze === 3) {
-                hoeveelsteZn = woord4
-            }
-            return hoeveelsteZn
+        let randomLidwoord = random(znOpties.length)
+        if (randomLidwoord === 0) {
+            eersteZn = woord1
+        }
+        else if (randomLidwoord === 1) {
+            eersteZn = woord2
+        }
+        else if (randomLidwoord === 2) {
+            eersteZn = woord3
+        }
+        else if (randomLidwoord === 3) {
+            eersteZn = woord4
         }
 
-        function zinMaker() {
-            eersteZn = genereerZn(eersteZn)
 
-            let werkWoord = werkWoorden[random(werkWoorden.length)]
-
-            let voegWoord = voegWoorden[random(voegWoorden.length)]
-
-            tweedeZn = genereerZn(tweedeZn)
-
-            while (eersteZn === tweedeZn) {
-                console.log("dubbelgevondenvorm!!!!!!!cool")
-                tweedeZn = genereerZn(tweedeZn)
-
-            }
-
-            print(capitalize(eersteZn) + " " + werkWoord + " " + voegWoord + " " + tweedeZn + ".")
-        }
-
-        // zinnen veranderen met muisbeweging
-        // onMouseMove10px = zinMaker
-        // zinnen veranderen met klik
-        zinMaker()
-
+        print(eersteZn)
 
 
         // helperfuncties (best onderaan zetten dan maakt het je code niet lelijk)
@@ -82,10 +53,6 @@
         // print een content als h2
         function print(content) {
             document.getElementById("output").innerHTML = content
-        }
-        // capitalize
-        function capitalize(woord) {
-            return woord[0].toUpperCase() + woord.slice(1)
         }
     </script>
 </body>

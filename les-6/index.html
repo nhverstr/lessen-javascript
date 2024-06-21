@@ -6,9 +6,53 @@
 </head>
 
 <body>
-    <h2></h2>
+    <h2 id="output"></h2>
 
     <script>
+        // Data
+        let zelfstandigeNaamwoordenDe = ["koe", "schuurborstel", "stylo", "kernenergie", "kat", "pyromaan"]
+        let zelfstandigeNaamwoordenHet = ["theekopje", "korenbloempje", "brood", "kastje", "gesprek"]
+        let zelfstandigeNaamwoordenEen = ["betweter", "waterkan", "krokodil", "tandenborstel"]
+        let zelfstandigeNaamwoordPuur = ["Nathan", "liefde", "Virginie"]
+        let werkWoorden = ["speelt", "eet", "geeft", "likt", "gilt", "krabt", "geeuwt", "klikt", "schuurt", "boert"]
+        let voegWoorden = ["met", "aan", "naar", "bij", "in", "rondom", "op", "tussen", "zonder"]
+
+
+        // Engine
+        // zin = lidwoord + zn naamwoord + ww + voegwoord + lidwoord + zn naamwoord
+        let woord1 = "de " + zelfstandigeNaamwoordenDe[random(zelfstandigeNaamwoordenDe.length)]
+        let woord2 = "het " + zelfstandigeNaamwoordenHet[random(zelfstandigeNaamwoordenHet.length)]
+        let woord3 = "een " + zelfstandigeNaamwoordenEen[random(zelfstandigeNaamwoordenEen.length)]
+        let woord4 = zelfstandigeNaamwoordPuur[random(zelfstandigeNaamwoordPuur.length)]
+
+
+        let randomLidwoord = random(4)
+        if (randomLidwoord === 0) {
+            eersteZn = woord1
+        }
+        else if (randomLidwoord === 1) {
+            eersteZn = woord2
+        }
+        else if (randomLidwoord === 2) {
+            eersteZn = woord3
+        }
+        else if (randomLidwoord === 3) {
+            eersteZn = woord4
+        }
+
+
+        print(eersteZn)
+
+
+        // helperfuncties (best onderaan zetten dan maakt het je code niet lelijk)
+        // genereer random nummer tot bovengrens
+        function random(bovengrens) {
+            return Math.floor(Math.random() * bovengrens)
+        }
+        // print een content als h2
+        function print(content) {
+            document.getElementById("output").innerHTML = content
+        }
     </script>
 </body>
 

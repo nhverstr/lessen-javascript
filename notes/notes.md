@@ -31,7 +31,7 @@ zo met drag and drop
 - random quote generator
 - blad steen schaar spel
 - 2d platformer
-misschien wat ambitieus
+misschien wat ambitieus -> les 9?
 
 - Weather App
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
@@ -46,3 +46,6 @@ misschien wat ambitieus
     .catch(error => {
       console.log("Error:", error);
     });
+-> goede voorbereiding voor DALL-E image generation
+
+- random quote generator + DALL-E illustration

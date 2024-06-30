@@ -84,9 +84,10 @@ reject() geeft een argument mee voor catch()
 OK
 
 ### 2C. Kopieer je functie, zorg dat je Promise reject, en dus niet succesvol uitvoert. (antwoord in script.js)
+OK
 
 ### 2D. Waarvoor dient Promise.catch()?
 
-Chatbot:
+Chatbot: The purpose of promise.catch() in JavaScript is to handle errors or rejections that occur during the execution of a promise. It allows you to define a callback function that will be executed if the promise is rejected, providing a way to manage errors and exceptions in asynchronous code.
 
-Jouw antwoord:
+Jouw antwoord: catch is om iets te kunnen returnen als je promise failt aka rejected is, dat krijgt die de reject value mee en kan je die loggen door een callback met dat argument te definieren

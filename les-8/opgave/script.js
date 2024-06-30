@@ -53,7 +53,7 @@ timerWithPromise2()
   console.log(result)
 })
 .catch((error) => {
-  console.log("Error Occured:", error)
+  console.log(error)
 })
 
 
@@ -69,7 +69,12 @@ timerWithPromise2()
 function timerWithPromise3() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      if (true) {
         resolve(1 + 2)
+      }
+      else {
+        reject("error has occured")
+      }
     }, 1000)
   })
 }
@@ -79,5 +84,30 @@ timerWithPromise3()
   console.log(result)
 })
 .catch((error) => {
-  console.log("Error Occured:", error)
+  console.log(error)
+})
+
+
+
+
+// 2C
+function timerWithPromise4() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (false) {
+        resolve(1 + 2)
+      }
+      else {
+        reject("error has occured")
+      }
+    }, 1000)
+  })
+}
+
+timerWithPromise4()
+.then((result) => {
+  console.log(result)
+})
+.catch((error) => {
+  console.log(error)
 })

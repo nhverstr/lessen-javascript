@@ -49,3 +49,10 @@ misschien wat ambitieus -> les 9?
 -> goede voorbereiding voor DALL-E image generation
 
 - random quote generator + DALL-E illustration
+
+-> les 7: random quote generator: data structuur en logica
+-> les 8: fetch en promises
+  -> https://api.adviceslip.com/advice -> json api voorbeeld
+  -> expressjs eigen api
+  -> uitbreiding: frontend server uitleggen?
+-> les 9: quote generator met dall-e api

@@ -9,3 +9,6 @@ hoe werken promisses asynchroon?
 waarom is fetch asynchroon?
 
 hoe werkt promise chaining?
+
+## Extra
+de return type van een functie

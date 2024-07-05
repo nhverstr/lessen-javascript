@@ -55,4 +55,9 @@ misschien wat ambitieus -> les 9?
   -> https://api.adviceslip.com/advice -> json api voorbeeld
   -> expressjs eigen api
   -> uitbreiding: frontend server uitleggen?
--> les 9: quote generator met dall-e api
+
+huiswerk
+Classes en Objects
+Quote generator met dall-e
+
+-> les 9: server to server requests

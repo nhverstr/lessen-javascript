@@ -114,6 +114,7 @@ Both JavaScript and Python provide powerful and flexible class mechanisms, each 
 
 ##### Jouw antwoord: 
 Python is object-oriented, waardoor classen echt een nieuwe en essentiële functionaliteit zijn. In JS was het al mogelijk hetzelfde te bereiken aan de hand van functies en prototypes, waardoor de class syntax een laag hierboven op is dit eigenlijk niet strict noodzakelijk is maar wel de user experience vergemakkelijkt (syntactic sugar).
+=> javascript bootst na van java hoe een classe kan gedefinieerd worden
 
 een paar verschillen:
 - beiden: Class ClassA
@@ -365,3 +366,24 @@ Een setter kan properties van een object gaan aanpassen, dit kan handig zijn om 
 
 Oefening over klasses met overerving...
 Maak 3 bestanden aan. Een hoofdklasse "Vorm(breedte, hoogte)", met getters en setters voor breedte en hoogte. Geef de klasse een methode Vorm.getArea(), maar return niks. Maak een klasse Cirkel en Vierkant, met elk een eigen implementatie van getArea.
+
+
+#### Concepten
+
+##### Methoden
+
+functies van klassen.
+
+##### Scope
+
+Afschermen van je variablelen
+
+Scope van de properties/attributten is de klasse => name, age van Person bestaan ergens anders niet. (Je kan ze dus opnieuw gebruiken in een andere klasse)
+
+##### getters en setters
+
+niet get username => getUsername
+
+oproepen niet Cirkel.username => Cirkel.getUsername()
+
+setters: andere manier om properties te definiëren, als je bv geen meegeeft aan je constructor of als je ze wilt overschrijven

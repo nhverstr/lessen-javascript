@@ -61,3 +61,13 @@ Classes en Objects
 Quote generator met dall-e
 
 -> les 9: server to server requests
+
+-> huiswerk
+Misschien is het van belang om nu veel code te beginnen schrijven, en de aangeleerde concepten te trainen. Direct in node werken geeft wat teveel afleidingen, dus misschien eerder een spelletje, in html 5 met canvas of DOM (waarschijnlijk met DOM).
+Verdere oefeningen op structuur en Classes.
+
+Boids?
+PHP? Server loskoppelen van frontend?
+-> les 10: oefening afwerken met chatbot
+
+-> les 11: boids?

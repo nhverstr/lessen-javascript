@@ -35,19 +35,6 @@ misschien wat ambitieus -> les 9?
 
 - Weather App
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric`;
-
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      locationName.textContent = data.name;
-      temperature.textContent = `Temperature: ${data.main.temp}°C`;
-      description.textContent = `Description: ${data.weather[0].description}`;
-    })
-    .catch(error => {
-      console.log("Error:", error);
-    });
--> goede voorbereiding voor DALL-E image generation
-
 - random quote generator + DALL-E illustration
 
 -> les 7: random quote generator: data structuur en logica
@@ -70,4 +57,10 @@ Boids?
 PHP? Server loskoppelen van frontend?
 -> les 10: oefening afwerken met chatbot
 
--> les 11: boids?
+-> les 11: afwerken chatbot
+Opgave: vanaf nu focussen op zelfstandig code schrijven, prutsen, uitzoeken, en minder hapklare theorie geven.
+oefeningen: 
+  - cli tictactoe? met nodejs cli tools
+  - een vijver met visjes? oefening op boids en classes, complexe datastructuren
+
+

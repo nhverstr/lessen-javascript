@@ -17,6 +17,59 @@ Je werkt deze keer in de terminal, met een script uitgevoerd door NodeJS. Je gaa
 
 Chatbot:
 
+Initialize your project and create the necessary files:
+
+Create a new directory for your project and navigate into it.
+Create a package.json file by running npm init -y.
+Create the index.mjs file:
+
+Create a file named index.mjs in the project directory.
+Write the NodeJS app:
+
+Open index.mjs and write the following code:
+
+// index.mjs
+```javascript
+import readline from 'readline';
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question('Enter your name: ', (name) => {
+    console.log(`Hello, ${name}!`);
+    rl.close();
+});
+```
+Run the app:
+In your terminal, navigate to your project directory and run the app using Node with the following command:
+```javascript
+node --experimental-modules index.mjs
+```
+Explanation:
+
+`import readline from 'readline';`
+
+This imports the readline module, which provides an interface for reading data from a Readable stream (such as process.stdin).
+
+`const rl = readline.createInterface({...});`
+
+This creates an instance of readline.Interface to handle input and output.
+
+`rl.question('Enter your name: ', (name) => {...});`
+
+This method displays a query to the user, waits for the user's input, and then invokes the callback function with the user's response.
+
+`console.log(Hello, ${name}!);`
+
+This logs the greeting message to the console using template literals.
+
+`rl.close();`
+
+This closes the readline interface after the input has been processed.
+That's it! You now have a simple 'Hello World' NodeJS app that reads input from the terminal using ES6 imports.
+
 ### Start je terminal in de juiste directory
 Met dit symbool ">" geef ik aan dat je in de terminal werkt.
 
